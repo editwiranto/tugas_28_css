@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas CSS - NIOMIC</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #333333;
+      }
+      .container {
+        background-color: #333333;
+        width: 800px;
+        margin: 30px auto;
+      }
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 150px;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+      label {
+        color: white;
+        margin-bottom: 3px;
+      }
+      span {
+        color: blue;
+      }
+      input[type="file"] {
+        color: white;
+      }
+      .container form :nth-child(6) {
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="lampung.jpg" alt="lampung" class="rounded-circle" />
+      <form>
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" class="form-control" placeholder="Nama Lengkap" />
+        </div>
+        <div class="form-group">
+          <label>Alamat</label>
+          <textarea name="alamaat" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Alamat Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Alamat Email (disabled)"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" placeholder="Password" />
+        </div>
+        <div>
+          <label>Scan KTP</label> <br />
+          <input type="file" />
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label
+            >saya <u>Setuju</u> dan telah membaca <span> aturan </span> serta
+            <span>ketentuan</span> yang berlaku</label
+          >
+        </div>
+        <div class="d-grid d-md-block">
+          <button type="button" class="btn btn-info">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
